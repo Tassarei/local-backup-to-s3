@@ -7,6 +7,8 @@ Pipelines's progress and failures can be checked via the Dagit UI. When a pipeli
 
 
 # Installation
+AWS CLI has to be configured first. For more information, please visit [this link.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) 
+
 You should create a virtual environment first. Clone the project, activate optionally the virtual environment and install the dependencies by going first into the `requirements` folder and then running the following commands:
 
 `pip install -r common.txt`
