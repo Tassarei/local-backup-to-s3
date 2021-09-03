@@ -19,6 +19,8 @@ If you want to run the tests, run this command also:
 
 and delete the `to_be_deleted.txt` file inside the `empty_folder_for_tests` folder.
 
+Create a DAGSTER_HOME environment variable with the wanted location of the dagster settings as the value. That folder should be empty.
+
 Finally, inside the `backup_to_s3` folder, create an environment file(.env) with the following content:
 
     BACKUP_FOLDER=YOUR_BACKUP_FOLDER
@@ -31,12 +33,12 @@ Finally, inside the `backup_to_s3` folder, create an environment file(.env) with
 If you define EMAIL_FROM and EMAIL_PASSWORD, make sure to use gmail credentials.
 
 # Usage
-Go inside the `backup_to_s3` folder and run the two following commands in parallel(the two instances have to be running at the same time):
+Go to the `backup_to_s3` folder and run the two following commands in two separate windows(the two instances have to be running at the same time):
 
     dagit -f repo.py
     dagster-daemon run
 
-Go to `http://localhost:3000/instance/sensors` (replace 3000 with the dagit port if you have changed it) and activate `new_files_sensor` and optionally `email_on_backup_s3_pipeline_failure`. If there's one or more files inside the backup folder, they should get picked up soon and you can see the runs launched at `http://localhost:3000/instance/runs` .
+Go afterwards to `http://localhost:3000/instance/sensors` (replace 3000 with the dagit port if you have changed it) and activate `new_files_sensor` and optionally `email_on_backup_s3_pipeline_failure`. If there's one or more files inside the backup folder, they should get picked up soon and you can see the runs launched at `http://localhost:3000/instance/runs` .
 
 
 # License
