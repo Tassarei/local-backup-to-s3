@@ -9,13 +9,13 @@ Pipelines's progress and failures can be checked via the Dagit UI. When a pipeli
 # Installation
 You should create a virtual environment first. Clone the project, activate optionally the virtual environment and install the dependencies by going first into the `requirements` folder and then running the following commands:
 
-`pip install common.txt`
+`pip install -r common.txt`
 
-`pip install production.txt`
+`pip install -r production.txt`
 
 If you want to run the tests, run this command also:
 
-`pip install tests.txt`
+`pip install -r tests.txt`
 
 and delete the `to_be_deleted.txt` file inside the `empty_folder_for_tests` folder.
 
