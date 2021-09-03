@@ -17,6 +17,8 @@ If you want to run the tests, run this command also:
 
 `pip install tests.txt`
 
+and delete the `to_be_deleted.txt` file inside the `empty_folder_for_tests` folder.
+
 Finally, inside the `backup_to_s3` folder, create an environment file(.env) with the following content:
 
     BACKUP_FOLDER=YOUR_BACKUP_FOLDER
