@@ -37,5 +37,5 @@ Go inside the `backup_to_s3` folder and run the two following commands in parall
 Go to `http://localhost:3000/instance/sensors` (replace 3000 with the dagit port if you have changed it) and activate `new_files_sensor` and optionally `email_on_backup_s3_pipeline_failure`. If there's one or more files inside the backup folder, they should get picked up soon and you can see the runs launched at `http://localhost:3000/instance/runs` .
 
 
-# Licence
-local-backup-to-s3 is licensed under the MIT license.
+# License
+local-backup-to-s3 is licensed under the [MIT](LICENSE.txt) license.
